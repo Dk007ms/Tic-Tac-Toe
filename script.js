@@ -55,7 +55,6 @@ function startgame(callback){
     p2=false;
     current_player.innerText=`${player1}'s Turn`;
     gamegrid=["","","","","","","","",""];
-    container.style.display="flex";
     boxes.forEach((value,index)=>{
         boxes[index].innerText="";
         boxes[index].style.pointerEvents="all";
@@ -138,5 +137,4 @@ modal_newgame.addEventListener("click",()=>{
 
 exit_btn.addEventListener("click",()=>{
     closemodal();
-    container.style.display="none";
-})
+});
