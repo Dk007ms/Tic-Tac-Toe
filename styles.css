@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Tilt+Neon&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/Lawrencium.jpg);
+    background-repeat: no-repeat;
+    background-size:100vw;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.tied{
+    background-image: url(assets/Designer.png);
+}
+
+.won{
+    background-image: url(assets/won.png);
+}
+
+.container{
+    width: 18.3rem;
+    height: 18.3rem;
+    border-radius: 5rem;
+    background-color: #FA709A;
+    background-image: -webkit-linear-gradient(90deg, #FA709A 0%, #FEE140 98%);
+    background-image: -moz-linear-gradient(90deg, #FA709A 0%, #FEE140 98%);
+    background-image: -o-linear-gradient(90deg, #FA709A 0%, #FEE140 98%);
+    background-image: linear-gradient(90deg, #FA709A 0%, #FEE140 98%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxes{
+    width: 5rem;
+    height: 5rem;
+    border: 0.1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    padding: 3rem;
+}
+
+.box1{
+    border-top-left-radius: 5rem;
+}
+.box3{
+    border-top-right-radius: 5rem;
+}
+.box7{
+    border-bottom-left-radius: 5rem;
+}
+.box9{
+    border-bottom-right-radius: 5rem;
+}
+
+.current_player{
+    position: absolute;
+    top: 2rem;
+    width: 15rem;
+    height: 2rem;
+    border-radius: 5rem;
+    background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,1) 0%, rgba(255,244,234,1) 100.2% );
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start_button{
+    position: absolute;
+    bottom: 2rem;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5rem;
+    background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,1) 0%, rgba(255,244,234,1) 100.2% );
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Tilt Neon', sans-serif;
+    cursor: pointer;
+}
+
+
+.modal{
+    position: absolute;
+    width: 25rem;
+    height: 15rem;
+    top: 17rem;
+    left: 36rem;
+    z-index: 15;
+    color: white;
+    border: 1px solid white;
+    border-radius: 1rem;
+    scale: 0;
+    transition-property: scale;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+    background-color: rgba(10, 10, 10, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    pointer-events: initial;
+}
+
+.active2{
+    filter: blur(1rem);
+    pointer-events: none;
+}
+    
+
+.active{
+    scale: 1;
+}
+
+.overlay {
+    position: absolute;
+    background-color: #24232383;
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: scale 500ms ease-in-out;
+}
+
+.overlayactive {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.modal_newgame{
+    position: relative;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5rem;
+    background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,1) 0%, rgba(255,244,234,1) 100.2% );
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Tilt Neon', sans-serif;
+    cursor: pointer;
+}
+
+.exit_button{
+    position: relative;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5rem;
+    background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,1) 0%, rgba(255,244,234,1) 100.2% );
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Tilt Neon', sans-serif;
+    cursor: pointer;
+}
+
+.result{
+    position: absolute;
+    width: 15rem;
+    left: 5rem;
+    display: flex;
+    justify-content: center;
+    bottom: 10rem;
+    font-size: x-large;
+}
+
+.players{
+    width: 12rem;
+    height: 4rem;
+    position: absolute;
+    top:7rem;
+    left: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.player_input{
+   height: 1.8rem;
+   border-radius: 7px;
+   background-color: rgb(238, 255, 0);
+   padding: 10px;
+   font-family: 'Playpen Sans', cursive;
+   font-family: 'Tilt Neon', sans-serif;
+   font-weight: 700;
+}
+
+.start_image{
+    width: 30rem;
+    height: 12rem;
+    position: absolute;
+    top:-1rem;
+    right:0.5rem;
+}

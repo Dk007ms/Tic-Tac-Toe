@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/newgame.png" type="image/x-icon">
+    <title>Zero-Kata</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="current_player"><span class="current_player_name"></span></div>
+        <div class="container">
+            <div class="boxes box1"></div>
+            <div class="boxes box2"></div>
+            <div class="boxes box3"></div>
+            <div class="boxes box4"></div>
+            <div class="boxes box5"></div>
+            <div class="boxes box6"></div>
+            <div class="boxes box7"></div>
+            <div class="boxes box8"></div>
+            <div class="boxes box9"></div>
+        </div>
+        
+        <div class="modal">
+           
+            <div class="players">
+                <input type="text" name="player1" id="player1" value="" class="player_input" placeholder="Player 1" >
+                <input type="text" name="player2" id="player2" value="" class="player_input" placeholder="Player 2">
+            </div>
+            <div class="result"></div>
+            <button class="exit_button">Exit</button>
+            <button class="modal_newgame">Start Again</button>
+        </div>
+        <button class="start_button">New Game</button>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
